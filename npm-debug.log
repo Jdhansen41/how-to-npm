@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v6.11.3/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v6.11.3/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/first',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/@jdhansen41/josh/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle @jdhansen41/josh@1.0.0~prepublish: @jdhansen41/josh@1.0.0
+11 silly lifecycle @jdhansen41/josh@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/@jdhansen41/josh/1.0.0/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace/first' ]
+13 verbose tarball /home/ubuntu/.npm/@jdhansen41/josh/1.0.0/package.tgz
+14 verbose folder /home/ubuntu/workspace/first
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/@jdhansen41/josh/1.0.0/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @jdhansen41/josh@1.0.0
+18 verbose afterAdd /home/ubuntu/.npm/@jdhansen41/josh/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/@jdhansen41/josh/1.0.0/package/package.json written
+21 silly publish { name: '@jdhansen41/josh',
+21 silly publish   version: '1.0.0',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/Jdhansen41/how-to-npm.git' },
+21 silly publish   scripts: { test: 'node test.js' },
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   description: 'This is for how-to-npm exercises',
+21 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+21 silly publish   main: 'test.js',
+21 silly publish   devDependencies: {},
+21 silly publish   bugs: { url: 'https://github.com/Jdhansen41/how-to-npm/issues' },
+21 silly publish   homepage: 'https://github.com/Jdhansen41/how-to-npm#readme',
+21 silly publish   readme: 'This is for how-to-npm exercises\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   _id: '@jdhansen41/josh@1.0.0',
+21 silly publish   _shasum: '2f1b836ca4ecd5e4a30f9b83bb0877521c52cbbb',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @jdhansen41/josh
+24 silly mapToRegistry scope (from package name) @jdhansen41
+25 verbose mapToRegistry no registry URL found in name for scope @jdhansen41
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry http://localhost:15443/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@jdhansen41/josh',
+28 silly mapToRegistry   scope: '@jdhansen41',
+28 silly mapToRegistry   escapedName: '@jdhansen41%2fjosh',
+28 silly mapToRegistry   name: '@jdhansen41/josh',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri http://localhost:15443/@jdhansen41%2fjosh
+30 verbose publish registryBase http://localhost:15443/
+31 silly publish uploading /home/ubuntu/.npm/@jdhansen41/josh/1.0.0/package.tgz
+32 verbose request uri http://localhost:15443/@jdhansen41%2fjosh
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 12:38:20 AM
+35 verbose request id 2d56c1bacfda8b2b
+36 http request PUT http://localhost:15443/@jdhansen41%2fjosh
+37 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+38 info attempt registry request try #2 at 12:38:30 AM
+39 http request PUT http://localhost:15443/@jdhansen41%2fjosh
+40 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+41 info attempt registry request try #3 at 12:39:30 AM
+42 http request PUT http://localhost:15443/@jdhansen41%2fjosh
+43 verbose request invalidating /home/ubuntu/.npm/localhost_15443/_40jdhansen41_252fjosh on PUT
+44 error publish Failed PUT undefined
+45 verbose stack Error: connect ECONNREFUSED 127.0.0.1:15443
+45 verbose stack     at Object.exports._errnoException (util.js:1020:11)
+45 verbose stack     at exports._exceptionWithHostPort (util.js:1043:20)
+45 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+46 verbose cwd /home/ubuntu/workspace/first
+47 error Linux 4.9.80-c9
+48 error argv "/home/ubuntu/.nvm/versions/node/v6.11.3/bin/node" "/home/ubuntu/.nvm/versions/node/v6.11.3/bin/npm" "publish"
+49 error node v6.11.3
+50 error npm  v3.10.10
+51 error code ECONNREFUSED
+52 error errno ECONNREFUSED
+53 error syscall connect
+54 error Error: connect ECONNREFUSED 127.0.0.1:15443
+54 error     at Object.exports._errnoException (util.js:1020:11)
+54 error     at exports._exceptionWithHostPort (util.js:1043:20)
+54 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+54 error  { Error: connect ECONNREFUSED 127.0.0.1:15443
+54 error     at Object.exports._errnoException (util.js:1020:11)
+54 error     at exports._exceptionWithHostPort (util.js:1043:20)
+54 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+54 error   code: 'ECONNREFUSED',
+54 error   errno: 'ECONNREFUSED',
+54 error   syscall: 'connect',
+54 error   address: '127.0.0.1',
+54 error   port: 15443 }
+55 error If you are behind a proxy, please make sure that the
+55 error 'proxy' config is set properly.  See: 'npm help config'
+56 verbose exit [ 1, true ]

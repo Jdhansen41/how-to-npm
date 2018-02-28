@@ -1,0 +1,23 @@
+{
+  "name": "@jdhansen41/josh",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jdhansen41/how-to-npm.git"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "This is for how-to-npm exercises",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "main": "test.js",
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/Jdhansen41/how-to-npm/issues"
+  },
+  "homepage": "https://github.com/Jdhansen41/how-to-npm#readme"
+}
